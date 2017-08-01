@@ -1,0 +1,128 @@
+.header {
+	background: url("../img/header-back.jpg") top center no-repeat;
+	padding-bottom: 153px;
+}
+
+.header__top {
+	padding-top: 22px;
+	padding-bottom: 23px;
+  background-color: rgba(255, 255, 255, 0.231);
+
+	.container {
+		display: flex;
+		padding-left: 20px;
+		padding-right: 13px;
+	}
+}
+
+.header__logo {
+	font-family: "Bringin";
+	font-size: 29px;
+	line-height: 44px;
+	color: $lightgrey;
+
+	span {
+		color: $accent;
+	}
+}
+
+.header__nav {
+	margin-left: 60px;
+}
+
+.header__nav-item {
+	margin-right: 19px;
+	font-size: 12px;
+	line-height: 44px;
+	font-weight: 700;
+	color: #9daeb6;
+	text-decoration: none;
+	text-transform: uppercase;
+	position: relative;
+
+	&::after {
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 2px;
+		background-color: $accent;
+		left: 0;
+		bottom: 0;
+		opacity: 0;
+		transition: 0.4s all;
+	}
+
+	&:hover::after {
+		bottom: -8px;
+		opacity: 1;
+	}
+}
+
+.header__button {
+	margin-left: auto;
+}
+
+.header__bottom {
+	margin-top: 133px;
+}
+
+.header__content {
+	box-sizing: border-box;
+	width: 1135px;
+	padding: 40px 35px 41px;
+	margin: 0 auto;
+	border: 3px solid #ffffff;
+	border-top: none;
+	position: relative;
+
+	&::before {
+		content: "";
+		position: absolute;
+		width: 737px;
+		height: 3px;
+		left: -3px;
+		top: -3px;
+		background-color: #ffffff;
+	}
+
+	&::after {
+		content: "";
+		position: absolute;
+		width: 201px;
+		height: 3px;
+		right: -3px;
+		top: -3px;
+		background-color: #ffffff;
+	}
+}
+
+.header__heading {
+	width: 500px;
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 50px;
+	line-height: 36px;
+	font-weight: 700;
+	color: #ffffff;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+
+	span {
+		font-family: "Bringin";
+		font-size: 66px;
+		line-height: 40px;
+		color: $lightblue;
+		text-transform: none;
+		letter-spacing: normal;
+		font-weight: 400;
+	}
+}
+
+.header__description {
+	width: 435px;
+	margin-top: 20px;
+	margin-bottom: 23px;
+	font-size: 18px;
+	line-height: 29px;
+	color: #ffffff;
+}

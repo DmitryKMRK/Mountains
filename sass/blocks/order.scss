@@ -1,0 +1,85 @@
+.order {
+	padding-top: 181px;
+	padding-bottom: 237px;
+	background: url("../img/order-back.jpg");
+	overflow: hidden;
+
+	.container {
+		position: relative;
+
+		&::before {
+			content: "";
+			position: absolute;
+			width: 573px;
+			height: 622px;
+			background: url("../img/order-trees.png") no-repeat;
+			top: -153px;
+			right: -279px;
+		}
+	}
+}
+
+.order__heading {
+	@include h2-small-font;
+}
+
+.order__description {
+	width: 710px;
+	margin-top: 6px;
+	font-size: 16px;
+	line-height: 26px;
+	color: #949494;
+}
+
+.order__form {
+	box-sizing: border-box;
+	margin-top: 26px;
+	margin-bottom: 10px;
+	padding: 3px;
+	display: flex;
+	width: 855px;
+	height: 62px;
+	background: #ffffff;
+	border-radius: 4px;
+	position: relative;
+
+	&::after {
+		content: "";
+		position: absolute;
+		width: 1px;
+		height: 35px;
+		background: #ebebeb;
+		left: 300px;
+		top: 13px;
+	}
+}
+
+.order__form-input {
+	box-sizing: border-box;
+	width: 300px;
+	font-family: "Roboto";
+	padding-left: 18px;
+	font-size: 16px;
+	letter-spacing: 1px;
+	font-weight: 300;
+	color: #848484;
+	border: none;
+}
+
+.order__form-span {
+	padding-left: 26px;
+	font-size: 14px;
+	line-height: 34px;
+	color: $accent;
+	position: relative;
+
+	&::before {
+		content: "";
+		position: absolute;
+		width: 14px;
+		height: 16px;
+		background: url("../img/icon-order.png") no-repeat;
+		left: 0;
+		top: 2px;
+	}
+}

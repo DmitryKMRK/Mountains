@@ -1,0 +1,36 @@
+.about-us {
+	background: #f6f4f4;
+
+	.container {
+		padding-top: 241px;
+		padding-bottom: 232px;
+		background: url("../img/map-back.png") 94px 23px no-repeat;
+		position: relative;
+	}
+}
+
+.about-us__heading {
+	@include h2-small-font;
+}
+
+.about-us__description {
+	width: 360px;
+	margin-top: 9px;
+	margin-bottom: 25px;
+	font-size: 14px;
+	line-height: 26px;
+	color: #949494;
+}
+
+.about-us__img-big {
+	position: absolute;
+	right: -210px;
+	top: -36px;
+}
+
+.about-us__img-small {
+	position: absolute;
+	right: 335px;
+	top: 277px;
+	z-index: 3;
+}

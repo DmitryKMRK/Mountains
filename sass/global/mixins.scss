@@ -1,0 +1,45 @@
+@mixin h2-font {
+	font-family: "Open Sans";
+	font-size: 30px;
+	line-height: 42.73px;
+	font-weight: 700;
+	color: $dark;
+	text-transform: uppercase;
+	margin-top: 0;
+	margin-bottom: 0;
+	text-align: center;
+	position: relative;
+
+	&::after {
+		content: "";
+		position: absolute;
+		width: 81px;
+		height: 7px;
+		margin-left: -40px;
+		background: url("../img/waves.svg");
+		left: 50%;
+		top: -33px;
+	}
+}
+
+@mixin h2-small-font {
+	font-family: "Open Sans";
+	font-size: 20px;
+	line-height: 42.73px;
+	font-weight: 700;
+	color: $dark;
+	text-transform: uppercase;
+	margin-top: 0;
+	margin-bottom: 0;
+	position: relative;
+
+	&::after {
+		content: "";
+		position: absolute;
+		width: 81px;
+		height: 7px;
+		background: url("../img/waves.svg");
+		left: 0;
+		top: -37px;
+	}
+}
