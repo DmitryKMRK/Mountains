@@ -1,0 +1,17 @@
+.gallery {
+	padding-top: 104px;
+	padding-bottom: 79px;
+}
+
+.gallery__heading {
+	@include h2-font;
+}
+
+.gallery__content {
+	margin-top: 63px;
+	height: 654px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}

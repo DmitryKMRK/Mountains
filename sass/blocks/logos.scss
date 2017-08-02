@@ -1,0 +1,50 @@
+.logos {
+	background: #f8f9fa;
+}
+
+.logos__content {
+	min-height: 180px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logos__item {
+	display: block;
+
+	&--1 {
+		width: 80px;
+		height: 24px;
+		background: url("../img/logo-slack.png");
+	}
+
+	&--2 {
+		width: 38px;
+		height: 34px;
+		background: url("../img/logo-adobe.png");
+	}
+
+	&--3 {
+		width: 80px;
+		height: 28px;
+		background: url("../img/logo-google.png");
+	}
+
+	&--4 {
+		width: 80px;
+		height: 18px;
+		background: url("../img/logo-fb.png");
+	}
+
+	&--5 {
+		width: 80px;
+		height: 24px;
+		background: url("../img/logo-spotify.png");
+	}
+
+	&--6 {
+		width: 70px;
+		height: 26px;
+		background: url("../img/logo-nike.png");
+	}
+}
